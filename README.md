@@ -9,6 +9,6 @@ https://developer.ridgerun.com/wiki/index.php?title=NVIDIA_Jetson_ISP_Control#Cu
 #
 https://github.com/RidgeRun/NVIDIA-Jetson-IMX477-RPIV3
 #
-
+http://www.davidhunt.ie/raspberry-pi-zero-with-pi-camera-as-usb-webcam/
 #
 
