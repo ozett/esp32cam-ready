@@ -41,3 +41,22 @@ sudo chown root:root /var/nvidia/nvcam/settings/camera_overrides.isp
 
 ## ESP32CAM MQTT !!
 https://github.com/botabotlab/ESP32CAM-MQTT
+
+## OPENCV gestream grab
+We also were unable to close the gstreamer pipeline started with the following command:
+
+stream = cv2.VideoCapture("nvarguscamerasrc ! video/x-raw(memory:NVMM), width=1280, "
+                                       "height=720, framerate=30/1, format=NV12 ! nvvidconv ! "
+                                       "video/x-raw, format=BGRx, width=640, height=360 ! "
+                                       "videoconvert ! video/x-raw, format=BGR ! appsink")
+However, adding the following line worked:
+
+stream = cv2.VideoCapture("nvarguscamerasrc ! video/x-raw(memory:NVMM), width=1280, "
+                                       "height=720, framerate=30/1, format=NV12 ! nvvidconv ! "
+                                       "video/x-raw, format=BGRx, width=640, height=360 ! "
+                                       "videoconvert ! video/x-raw, format=BGR ! appsink "
+                                       "wait-on-eos=false drop=true max-buffers=60 -e -vvv")
+For more information, see https://github.com/InES-HPMM/linux-l4t/issues/5 6
+
+https://forums.developer.nvidia.com/t/how-to-close-gstreamer-pipeline-in-python/74753/15
+
