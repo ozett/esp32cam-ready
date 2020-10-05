@@ -70,5 +70,6 @@ https://github.com/dimkas/ESP32_RTSP_Cam
 ## ESPcam ai thinker
 https://github.com/raphaelbs/esp32-cam-ai-thinker
 ## Espcam32 revisited
-https://github.com/easytarget/esp32-cam-webserver
+https://github.com/easytarget/esp32-cam-webserver <br>
+https://hackaday.io/project/168563-7-esp32-cam-example-expanded
 
