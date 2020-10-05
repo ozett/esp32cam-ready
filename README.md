@@ -64,8 +64,9 @@ https://forums.developer.nvidia.com/t/how-to-close-gstreamer-pipeline-in-python/
 ## QR, francefu   https://www.facebook.com/francefu
 https://github.com/fustyles/Arduino/blob/master/ESP32-CAM_QRCode_Recognition/ESP32-CAM_QRCode_Recognition.ino
 
-esp-32  camera rtsp binary  https://github.com/dimkas/ESP32_RTSP_Cam/blob/master/ESP32_RTSP_cam.bin
-https://github.com/dimkas/ESP32_RTSP_Cam
+## esp-32 camera rtsp / dimkas
+binary  https://github.com/dimkas/ESP32_RTSP_Cam/blob/master/ESP32_RTSP_cam.bin  <br>
+https://github.com/dimkas/ESP32_RTSP_Cam  <br>
 
 ## ESPcam ai thinker
 https://github.com/raphaelbs/esp32-cam-ai-thinker
