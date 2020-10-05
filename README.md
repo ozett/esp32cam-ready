@@ -60,3 +60,7 @@ For more information, see https://github.com/InES-HPMM/linux-l4t/issues/5 6
 
 https://forums.developer.nvidia.com/t/how-to-close-gstreamer-pipeline-in-python/74753/15
 
+--------------
+## QR
+## francefu   https://www.facebook.com/francefu
+
