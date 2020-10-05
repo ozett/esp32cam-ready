@@ -67,7 +67,8 @@ https://github.com/fustyles/Arduino/blob/master/ESP32-CAM_QRCode_Recognition/ESP
 esp-32  camera rtsp binary  https://github.com/dimkas/ESP32_RTSP_Cam/blob/master/ESP32_RTSP_cam.bin
 https://github.com/dimkas/ESP32_RTSP_Cam
 
-
+## ESPcam ai thinker
+https://github.com/raphaelbs/esp32-cam-ai-thinker
 ## Espcam32 revisited
 https://github.com/easytarget/esp32-cam-webserver
 
