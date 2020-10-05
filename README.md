@@ -61,8 +61,13 @@ For more information, see https://github.com/InES-HPMM/linux-l4t/issues/5 6
 https://forums.developer.nvidia.com/t/how-to-close-gstreamer-pipeline-in-python/74753/15
 
 --------------
-## QR
-## francefu   https://www.facebook.com/francefu
+## QR, francefu   https://www.facebook.com/francefu
+https://github.com/fustyles/Arduino/blob/master/ESP32-CAM_QRCode_Recognition/ESP32-CAM_QRCode_Recognition.ino
+
 esp-32  camera rtsp binary  https://github.com/dimkas/ESP32_RTSP_Cam/blob/master/ESP32_RTSP_cam.bin
 https://github.com/dimkas/ESP32_RTSP_Cam
+
+
+## Espcam32 revisited
+https://github.com/easytarget/esp32-cam-webserver
 
