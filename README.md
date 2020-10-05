@@ -63,4 +63,6 @@ https://forums.developer.nvidia.com/t/how-to-close-gstreamer-pipeline-in-python/
 --------------
 ## QR
 ## francefu   https://www.facebook.com/francefu
+esp-32  camera rtsp binary  https://github.com/dimkas/ESP32_RTSP_Cam/blob/master/ESP32_RTSP_cam.bin
+https://github.com/dimkas/ESP32_RTSP_Cam
 
