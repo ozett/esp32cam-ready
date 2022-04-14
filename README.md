@@ -1,3 +1,37 @@
+# esp32cam with tasmota, rtsp
+
+https://cgomesu.com/blog/Esp32cam-tasmota-webcam-server/#flashing-tasmota32-webcam-server
+
+
+wget \
+https://ota.tasmota.com/tasmota32/tasmota32-webcam.bin \
+  https://github.com/arendst/Tasmota-firmware/raw/main/static/esp32/boot_app0.bin \
+  https://github.com/arendst/Tasmota-firmware/raw/main/static/esp32/bootloader_dout_40m.bin \
+  https://github.com/arendst/Tasmota-firmware/raw/main/static/esp32/partitions.bin
+
+
+python -m esptool –-chip esp32 erase_flash
+python -m esptool --chip esp32 --port COM7 write_flash -z 0x1000 esp32-20190113-v1.9.4-779g5064df207.bin
+esptool.py --port $ESP_PORT erase_flash
+
+
+esptool --chip esp32 \
+  --port COM6 \
+  --before default_reset \
+  --after hard_reset \
+  write_flash -z \
+  --flash_mode dout \
+  --flash_freq 40m \
+  --flash_size detect \
+  0x1000 bootloader_dout_40m.bin \
+  0x8000 partitions.bin \
+  0xe000 boot_app0.bin \
+  0x10000 tasmota32-webcam.bin
+
+
+template:
+https://templates.blakadder.com/ai-thinker_ESP32-CAM.html
+
 # esp32cam-ready
 https://github.com/rzeldent/esp32cam-ready
 #
