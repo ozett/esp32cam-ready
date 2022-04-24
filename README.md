@@ -2,12 +2,14 @@
 
 https://cgomesu.com/blog/Esp32cam-tasmota-webcam-server/#flashing-tasmota32-webcam-server
 
-
+download:
+```
 wget \
 https://ota.tasmota.com/tasmota32/tasmota32-webcam.bin \
   https://github.com/arendst/Tasmota-firmware/raw/main/static/esp32/boot_app0.bin \
   https://github.com/arendst/Tasmota-firmware/raw/main/static/esp32/bootloader_dout_40m.bin \
   https://github.com/arendst/Tasmota-firmware/raw/main/static/esp32/partitions.bin
+```
 
 ```
 python -m esptool –-chip esp32 erase_flash
