@@ -14,7 +14,7 @@ python -m esptool –-chip esp32 erase_flash
 python -m esptool --chip esp32 --port COM7 write_flash -z 0x1000 esp32-20190113-v1.9.4-779g5064df207.bin
 esptool.py --port $ESP_PORT erase_flash
 
-
+```
 esptool --chip esp32 \
   --port COM6 \
   --before default_reset \
@@ -27,7 +27,7 @@ esptool --chip esp32 \
   0x8000 partitions.bin \
   0xe000 boot_app0.bin \
   0x10000 tasmota32-webcam.bin
-
+```
 
 template:
 https://templates.blakadder.com/ai-thinker_ESP32-CAM.html
