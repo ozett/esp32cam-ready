@@ -9,10 +9,13 @@ https://ota.tasmota.com/tasmota32/tasmota32-webcam.bin \
   https://github.com/arendst/Tasmota-firmware/raw/main/static/esp32/bootloader_dout_40m.bin \
   https://github.com/arendst/Tasmota-firmware/raw/main/static/esp32/partitions.bin
 
-
+```
 python -m esptool –-chip esp32 erase_flash
+
 python -m esptool --chip esp32 --port COM7 write_flash -z 0x1000 esp32-20190113-v1.9.4-779g5064df207.bin
+
 esptool.py --port $ESP_PORT erase_flash
+```
 
 ```
 esptool --chip esp32 \
